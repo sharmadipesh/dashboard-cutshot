@@ -2,3 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+	font-family: $lato-regular;
+	font-size: 18px;
+	background-color: $base-background-color;
+}
+
+.main-app-container{
+	padding: 90px 25px 25px;
+}
