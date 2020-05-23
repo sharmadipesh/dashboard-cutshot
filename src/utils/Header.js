@@ -1,35 +1,18 @@
 import React, { Component } from 'react';
+import Icon from 'utils/Icon';
 
 class Header extends Component {
     render() {
         return (
-            <div className="header-style-container d-flex align-items-center justify-content-between">
-                <div className="title-text">
-                    Dashboard
+            <div className="header-style-container d-flex">
+                <div className="part-one d-flex align-items-center justify-content-center">
+                    <Icon className="icon-progress" icon="ICON_HOME"/>
                 </div>
-                
-                <div className="select-width">
-                    <select
-                        name="Language"
-                        className="form-control select-option"
-                    >
-                        <option value="English">English</option>
-                    </select>
-                </div>
-            </div> 
-        );
-    }
-}
-
-export default Header;
-
-
-{/* <div className="header-style-container d-flex align-items-center justify-content-between">
-                <div className="title-text">
-                    Dashboard
-                </div>
-                <div className="row">
-                    <div className="col-md-12">
+                <div className="d-flex align-items-center justify-content-between part-two">
+                    <div className="title-text">
+                        Dashboard
+                    </div>
+                    <div className="select-width">
                         <select
                             name="Language"
                             className="form-control select-option"
@@ -38,22 +21,9 @@ export default Header;
                         </select>
                     </div>
                 </div>
-            </div> */}
+            </div> 
+        );
+    }
+}
 
-            // <div className="header-style-container">
-            //     <div className="row">
-            //         <div className="col-11 d-flex align-items-center">
-            //             <div className="title-text">
-            //                 Dashboard
-            //             </div>
-            //         </div>
-            //         <div className="col-1">
-            //             <select
-            //                 name="Language"
-            //                 className="form-control select-option"
-            //             >
-            //                 <option value="English">English</option>
-            //             </select>
-            //         </div>
-            //     </div>
-            // </div>
+export default Header;
