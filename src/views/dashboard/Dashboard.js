@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import Card from 'utils/Card';
 import ProgressItems from './ProgressItems';
 import Constants from 'config/Constants';
+import DailyVisitor from './DailyVisitor';
 
 class Dashboard extends Component {
     render() {
         return (
             <div>
-                <Card className="mb-30">
+                <Card className="mb-30 overflow-hidden">
                     <div className="border-bottom plr-20 ptb-15 d-flex align-items-center justify-content-between">
                         <div className="title-text">
                             Daily Visitors
@@ -26,19 +27,20 @@ class Dashboard extends Component {
                                 {Constants.years.map((year,index)=><option key={index} value={year}>{year}</option>)}
                             </select> */}
                             <div className="mr-2">
-                                <select className="form-control" name="months">
+                                <select className="form-control font-size-14" name="months">
                                     {Constants.months.map((month,index)=><option key={index} value={month}>{month}</option>)}
                                 </select>
                             </div>
                             <div className="">
-                                <select className="form-control" name="years">
+                                <select className="form-control font-size-14" name="years">
                                     {Constants.years.map((year,index)=><option key={index} value={year}>{year}</option>)}
                                 </select>
                             </div>
                         </div>
                     </div>
-                    <div className="plr-20 ptb-20">
-                        Chart
+                    <div className="margin-lefts">
+                        {/* Chart */}
+                        <DailyVisitor {...this.props}/>
                     </div>
                 </Card>
                 <div className="row mb-30">
