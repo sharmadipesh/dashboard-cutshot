@@ -49,6 +49,8 @@ class Dashboard extends Component {
                             cardName={'realtime users'}
                             number={'56'}
                             progress={9.8}
+                            lineColor={'#186adb'}
+                            areaColor={'#e8f0fa'}
                         />
                     </div>
                     <div className="col-md-3">
@@ -56,6 +58,8 @@ class Dashboard extends Component {
                             cardName={'Total Visits'}
                             number={'54,598'}
                             progress={-11.9}
+                            lineColor={'#31ad43'}
+                            areaColor={'#ebf6ed'}
                         />
                     </div>
                     <div className="col-md-3">
@@ -63,6 +67,8 @@ class Dashboard extends Component {
                             cardName={'Bounce Rate'}
                             number={'73.67%'}
                             progress={12.2}
+                            lineColor={'#7a6bf6'}
+                            areaColor={'#efeffe'}
                         />
                     </div>
                     <div className="col-md-3">
@@ -70,6 +76,8 @@ class Dashboard extends Component {
                             cardName={'Visit Duration'}
                             number={'1m 4s'}
                             progress={19.6}
+                            lineColor={'#fce293'}
+                            areaColor={'#fefaef'}
                         />
                     </div>
                 </div>
