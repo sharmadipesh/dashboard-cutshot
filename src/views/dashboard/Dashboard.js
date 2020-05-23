@@ -6,6 +6,7 @@ import DailyVisitor from './DailyVisitor';
 import VisitedPage from 'views/dummyData/tableData';
 import Icon from 'utils/Icon';
 import TableChart from './TableChart';
+import SocialMedia from 'views/dummyData/socialMedia';
 
 class Dashboard extends Component {
     render() {
@@ -138,22 +139,15 @@ class Dashboard extends Component {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {VisitedPage.map((value,index)=>
+                                    {SocialMedia.map((value,index)=>
                                     <tr key={index}>
-                                        <td className="d-flex align-items-center justify-content-between">
-                                            <div>
-                                                {value.pageName}
-                                            </div>
-                                            <Icon className="clickable icon-size-15" icon="ICON_EXPORT"/>
+                                        <td>
+                                            {value.network}
                                         </td>
                                         <td>{value.visitors}</td>
-                                        <td>{value.uniquePageVisit}</td>
-                                        <td className="d-flex">
-                                            <div>{value.bounceRate}</div>
-                                            <div className="table-chart-container">
-                                                <div className="chart-position-set">
-                                                    <TableChart {...this.props}/>
-                                                </div>
+                                        <td className="" style={{width:'100%'}}>
+                                            <div id="progressbar">
+                                                <div style={{width:value.progressPercentage}}></div>
                                             </div>
                                         </td>
                                     </tr>
