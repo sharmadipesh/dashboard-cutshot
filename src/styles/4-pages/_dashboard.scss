@@ -19,3 +19,24 @@
     font-family: $lato-semibold;
     font-weight: 900;
 }
+
+.progress-success{
+    color: #2fac42 ;
+}
+.progress-neg{
+    color: #e8472a;
+}
+
+.icon-progress{
+    height: 20px;
+    width: 20px;
+}
+
+.icon-progress-success{
+    @extend .icon-progress;
+    transform: rotate(90deg);
+}
+.icon-progress-fail{
+    @extend .icon-progress;
+    transform: rotate(-90deg);
+}

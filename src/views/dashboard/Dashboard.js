@@ -48,28 +48,28 @@ class Dashboard extends Component {
                         <ProgressItems 
                             cardName={'realtime users'}
                             number={'56'}
-                            progress={'+9.1%'}
+                            progress={9.8}
                         />
                     </div>
                     <div className="col-md-3">
                         <ProgressItems 
-                            cardName={'realtime users'}
-                            number={'56'}
-                            progress={'+9.1%'}
+                            cardName={'Total Visits'}
+                            number={'54,598'}
+                            progress={-11.9}
                         />
                     </div>
                     <div className="col-md-3">
                         <ProgressItems 
-                            cardName={'realtime users'}
-                            number={'56'}
-                            progress={'+9.1%'}
+                            cardName={'Bounce Rate'}
+                            number={'73.67%'}
+                            progress={12.2}
                         />
                     </div>
                     <div className="col-md-3">
                         <ProgressItems 
-                            cardName={'realtime users'}
-                            number={'56'}
-                            progress={'+9.1%'}
+                            cardName={'Visit Duration'}
+                            number={'1m 4s'}
+                            progress={19.6}
                         />
                     </div>
                 </div>
