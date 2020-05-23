@@ -6,17 +6,15 @@ class ProgressItems extends Component {
         return (
             <>
                 <Card className="plr-20 ptb-15 d-flex flex-column align-items-center justify-content-center">
-                    {/* <div className="d-flex flex-column align-items-center justify-content-center"> */}
-                        <div>
-                            {this.props.cardName}
-                        </div>
-                        <div>
-                            {this.props.number}
-                        </div>
-                        <div className="d-flex">
-                            {this.props.progress}
-                        </div>
-                    {/* </div> */}
+                    <div className="text-uppercase progress-sub-text pt-10">
+                        {this.props.cardName}
+                    </div>
+                    <div className="progress-main-text ptb-10">
+                        {this.props.number}
+                    </div>
+                    <div className="d-flex">
+                        {this.props.progress}
+                    </div>
                 </Card>
             </>
         );
