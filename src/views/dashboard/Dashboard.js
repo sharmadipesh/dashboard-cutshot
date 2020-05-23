@@ -3,6 +3,9 @@ import Card from 'utils/Card';
 import ProgressItems from './ProgressItems';
 import Constants from 'config/Constants';
 import DailyVisitor from './DailyVisitor';
+import VisitedPage from 'views/dummyData/tableData';
+import Icon from 'utils/Icon';
+import TableChart from './TableChart';
 
 class Dashboard extends Component {
     render() {
@@ -83,15 +86,47 @@ class Dashboard extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-8">
-                        <Card className="mb-30">
-                            <div className="title-text plr-20 ptb-15 border-bottom">
+                        <Card className="">
+                            <div className="title-text plr-20 ptb-15">
                                 Most Visited Pages
                             </div>
+                            <table className="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">PAGE NAME</th>
+                                        <th scope="col">VISITORS</th>
+                                        <th scope="col">UNIQUE PAGE VISITS</th>
+                                        <th scope="col">BOUNCE RATE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {VisitedPage.map((value,index)=>
+                                    <tr key={index}>
+                                        <td className="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                {value.pageName}
+                                            </div>
+                                            <Icon className="clickable icon-size-15" icon="ICON_EXPORT"/>
+                                        </td>
+                                        <td>{value.visitors}</td>
+                                        <td>{value.uniquePageVisit}</td>
+                                        <td className="d-flex">
+                                            <div>{value.bounceRate}</div>
+                                            <div className="table-chart-container">
+                                                <div className="chart-position-set">
+                                                    <TableChart {...this.props}/>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    )}
+                                </tbody>
+                            </table>
                         </Card>
                     </div>
                     <div className="col-md-4">
                         <Card className="mb-30">
-                            <div className="title-text plr-20 ptb-15 border-bottom">
+                            <div className="title-text plr-20 ptb-15">
                                 Social Media Traffic
                             </div>
                         </Card>

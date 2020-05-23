@@ -75,9 +75,18 @@
 	overflow-x: hidden;
 }
 
+.icon-size-15{
+	height: 15px;
+	width: 15px;
+}
+
 .chart-dot{
 	height: 10px;
 	width: 10px;
 	border-radius: 50%;
 	background-color: #0d65d9;
+}
+
+.clickable{
+	cursor: pointer;
 }
