@@ -129,6 +129,37 @@ class Dashboard extends Component {
                             <div className="title-text plr-20 ptb-15">
                                 Social Media Traffic
                             </div>
+                            <table className="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">NETWORK</th>
+                                        <th scope="col">VISITORS</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {VisitedPage.map((value,index)=>
+                                    <tr key={index}>
+                                        <td className="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                {value.pageName}
+                                            </div>
+                                            <Icon className="clickable icon-size-15" icon="ICON_EXPORT"/>
+                                        </td>
+                                        <td>{value.visitors}</td>
+                                        <td>{value.uniquePageVisit}</td>
+                                        <td className="d-flex">
+                                            <div>{value.bounceRate}</div>
+                                            <div className="table-chart-container">
+                                                <div className="chart-position-set">
+                                                    <TableChart {...this.props}/>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    )}
+                                </tbody>
+                            </table>
                         </Card>
                     </div>
                 </div>
