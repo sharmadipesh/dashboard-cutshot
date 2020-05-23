@@ -140,7 +140,7 @@ class Dashboard extends Component {
                                 </thead>
                                 <tbody>
                                     {SocialMedia.map((value,index)=>
-                                    <tr key={index}>
+                                    <tr key={index} className="tr-height">
                                         <td>
                                             {value.network}
                                         </td>
