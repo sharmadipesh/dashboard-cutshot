@@ -91,8 +91,10 @@
 	cursor: pointer;
 }
 
-
-.not-found-icon{
-	height: 200px;
-	width: 200px;
+.not-found-container{
+	height: 75vh;
+	.not-found-icon{
+		height: 200px;
+		width: 200px;
+	}
 }
