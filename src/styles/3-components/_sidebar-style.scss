@@ -1,0 +1,41 @@
+#sidebar-style-container{
+    padding: 65px 0 0;
+
+    .profile{
+        position: relative;
+        .profile-image{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin-top: 25px;
+        }
+        .setting-icon{
+            background-color: #fff;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 95px;
+            right: 0;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+    .user-name{
+        font-family: $lato-semibold;
+        font-size: 18px;
+        margin: 8px 0 0;
+        .dot{
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: #31ad43;
+            margin: 3px 0 0 5px;
+        }
+    }
+    .designation{
+        font-size: 14px;
+        color: #818284;
+        margin-bottom: 20px;
+    }
+}
