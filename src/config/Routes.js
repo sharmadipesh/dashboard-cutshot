@@ -5,7 +5,7 @@ const Routes = {
 	Calender:'/calender',
 	Inbox:'/inbox',
 	Invoice:'/invoice',
-	LAB_EXPERIMENT:'/lab-experiment'
+	Lab_Experiment:'/lab-experiment'
 
 };
 

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import NotFound from 'utils/NotFound';
 
 class Invoice extends Component {
     render() {
         return (
             <div>
-                Invoice
+                <NotFound {...this.props}/> 
             </div>
         );
     }

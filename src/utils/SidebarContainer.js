@@ -28,7 +28,7 @@ class SidebarContainer extends Component {
                     <div className="designation">Developer</div>
                 </div>
                 <div className="navlink-container">
-                    <NavLink exact activeClassName="active-link" to='/' className=" d-flex align-items-center pb-15 mb-15 border-bottom">
+                    <NavLink exact activeClassName="active-link" to='/' className="inactive-link d-flex align-items-center pb-15 mb-15 border-bottom">
                         <Icon className="icon-progress mr-3" icon={pathname === '/' ? 'ICON_DASHBOARD_ACTIVE' :'ICON_DASHBOARD_INACTIVE'}/>
                         <div>Dashboard</div>
                     </NavLink>
