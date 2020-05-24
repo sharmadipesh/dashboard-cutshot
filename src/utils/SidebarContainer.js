@@ -48,6 +48,27 @@ class SidebarContainer extends Component {
                         <Icon className="icon-progress mr-3" icon={pathname === '/lab-experiment' ? 'ICON_LAB_ACTIVE' :'ICON_LAB_INACTIVE'}/>
                         <div>Lab / Experimental</div>
                     </NavLink>
+                    <div className="designation">
+                        RECENTLY VIEWED
+                    </div>
+                    <div className="d-flex align-items-center justify-content-between mb-15">
+                        <div className="visited-link clickable">
+                            Overall Performance
+                        </div>
+                        <Icon className="icon-size-10" icon="ICON_RIGHT_ARROW"/>
+                    </div>
+                    <div className="d-flex align-items-center justify-content-between mb-15">
+                        <div className="visited-link clickable">
+                            Invoice #940
+                        </div>
+                        <Icon className="icon-size-10" icon="ICON_RIGHT_ARROW"/>
+                    </div>
+                    <div className="d-flex align-items-center justify-content-between ">
+                        <div className="visited-link clickable">
+                            Customer: Minerva Viewer
+                        </div>
+                        <Icon className="icon-size-10" icon="ICON_RIGHT_ARROW"/>
+                    </div>
                 </div>
             </div>
         );
