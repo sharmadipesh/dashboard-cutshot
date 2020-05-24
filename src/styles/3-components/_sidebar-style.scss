@@ -38,4 +38,18 @@
         color: #818284;
         margin-bottom: 20px;
     }
+    .navlink-container{
+        padding: 40px 35px;
+        .inactive-link{
+            font-family: "Lato-Semibold";
+            font-size: 16px;
+            color: #45464b;
+            text-decoration: none;
+        }
+        .active-link{
+            color: #0d65d9;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    }
 }
