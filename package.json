@@ -11,6 +11,7 @@
     "echarts": "^4.7.0",
     "echarts-for-react": "^2.0.16",
     "react": "^16.13.1",
+    "react-collapsible": "^2.8.0",
     "react-dock": "^0.2.4",
     "react-dom": "^16.13.1",
     "react-responsive": "^8.0.3",
