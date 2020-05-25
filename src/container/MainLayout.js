@@ -28,10 +28,10 @@ class MainLayout extends Component {
 					sidebar={
 						<SidebarContainer {...this.props} sidebarHandler={this.sidebarHandler} />
 					}
-					open={this.state.isSidebarOpen}
+                    // open={this.state.isSidebarOpen}
+					open={ window.innerWidth >700 ? this.state.isSidebarOpen:!this.state.isSidebarOpen}
                     onSetOpen={this.sidebarHandler}
-                    docked={this.state.isSidebarOpen}
-                    id="dd11"
+                    docked={ window.innerWidth >700 ? this.state.isSidebarOpen:!this.state.isSidebarOpen}
 					styles={{
                         root: {
                             boxShadow:'none'
