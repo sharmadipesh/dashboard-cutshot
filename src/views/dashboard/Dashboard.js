@@ -18,18 +18,6 @@ class Dashboard extends Component {
                             Daily Visitors
                         </div>
                         <div className="d-flex">
-                            {/* <select
-                                name="months"
-                                className="form-control select-option mr-2 "
-                            >
-                                {Constants.months.map((month,index)=><option key={index} value={month}>{month}</option>)}
-                            </select>
-                            <select
-                                name="Years"
-                                className="form-control select-option"
-                            >
-                                {Constants.years.map((year,index)=><option key={index} value={year}>{year}</option>)}
-                            </select> */}
                             <div className="mr-2">
                                 <select className="form-control font-size-14" name="months">
                                     {Constants.months.map((month,index)=><option key={index} value={month}>{month}</option>)}

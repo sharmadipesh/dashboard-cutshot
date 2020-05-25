@@ -50,10 +50,7 @@ class DailyVisitor extends Component {
 					fontSize: '14',
                 },
                 padding: [5, 10],
-                // borderWidth: 2,
-                // borderColor :'#dddddd',
                 extraCssText: 'box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);',
-                // formatter: '{b0}TH DECEMBER 2020 <br /> {c0}'
                 formatter: function(params) {
 					return (
 						`<div class="chart-tooltip-name">${params.name}TH DECEMBER 2020</div>` +
