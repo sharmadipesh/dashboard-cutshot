@@ -4,6 +4,24 @@ import ReactEcharts from 'echarts-for-react';
 class LineChart extends Component {
     render() {
         const option = {
+            tooltip:{
+                show:true,
+                trigger:'axis',
+                backgroundColor :'#fff',
+                textStyle:{
+                    color:'',
+                    fontFamily: 'Lato-Medium',
+					fontSize: '14',
+                },
+                extraCssText: 'box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);',
+                formatter: function(params) {
+					return (
+                        `<div class="d-flex align-items-center justify-content-between">
+                            <div>${params[0].value}</div>
+                        </div>`
+					);
+				},
+            },
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
