@@ -38,7 +38,9 @@ class MainLayout extends Component {
                         },
 						sidebar: {
 							background: 'white',
-                            width: window.innerWidth > 600 ? '19%' : '100vw',
+                            // width: window.innerWidth > 600 ? '19%' : '100vw',
+                            // width: window.innerWidth > 600 ? '260px' : '100vw',
+                            width:'260px',
                             height:'100%',
                             boxShadow:'none',
                             borderRight:'1px solid #dddddd'

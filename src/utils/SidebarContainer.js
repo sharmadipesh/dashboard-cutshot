@@ -28,36 +28,36 @@ class SidebarContainer extends Component {
                     <div className="designation">Developer</div>
                 </div>
                 <div className="navlink-container">
-                    <NavLink exact activeClassName="active-link" to='/' className="inactive-link d-flex align-items-center pb-15 mb-15 border-bottom">
+                    <NavLink exact activeClassName="active-link" to='/' className="inactive-link d-flex align-items-center pb-18 mb-18 border-bottom">
                         <Icon className="icon-progress mr-3" icon={pathname === '/' ? 'ICON_DASHBOARD_ACTIVE' :'ICON_DASHBOARD_INACTIVE'}/>
                         <div>Dashboard</div>
                     </NavLink>
-                    <NavLink exact activeClassName="active-link" to='/calender' className="inactive-link d-flex align-items-center pb-15 mb-15 border-bottom">
+                    <NavLink exact activeClassName="active-link" to='/calender' className="inactive-link d-flex align-items-center pb-18 mb-18 border-bottom">
                         <Icon className="icon-progress mr-3" icon={pathname === '/calender' ? 'ICON_CALENDER_ACTIVE' :'ICON_CALENDER_INACTIVE'}/>
                         <div>Calender</div>
                     </NavLink>
-                    <NavLink exact activeClassName="active-link" to='/inbox' className="inactive-link d-flex align-items-center pb-15 mb-15 border-bottom">
+                    <NavLink exact activeClassName="active-link" to='/inbox' className="inactive-link d-flex align-items-center pb-18 mb-18 border-bottom">
                         <Icon className="icon-progress mr-3" icon={pathname === '/inbox' ? 'ICON_INBOX_ACTIVE' :'ICON_INBOX_INACTIVE'}/>
                         <div>Inbox</div>
                     </NavLink>
-                    <NavLink exact activeClassName="active-link" to='/invoice' className="inactive-link d-flex align-items-center pb-15 mb-15 border-bottom">
+                    <NavLink exact activeClassName="active-link" to='/invoice' className="inactive-link d-flex align-items-center pb-18 mb-18 border-bottom">
                         <Icon className="icon-progress mr-3" icon={pathname === '/invoice' ? 'ICON_INVOICING_ACTIVE' :'ICON_INVOICING_INACTIVE'}/>
                         <div>Invoicing</div>
                     </NavLink>
-                    <NavLink exact activeClassName="active-link" to='/lab-experiment' className="inactive-link d-flex align-items-center pb-15 mb-15 border-bottom">
+                    <NavLink exact activeClassName="active-link" to='/lab-experiment' className="inactive-link d-flex align-items-center pb-18 mb-18 border-bottom">
                         <Icon className="icon-progress mr-3" icon={pathname === '/lab-experiment' ? 'ICON_LAB_ACTIVE' :'ICON_LAB_INACTIVE'}/>
                         <div>Lab / Experimental</div>
                     </NavLink>
                     <div className="designation">
                         RECENTLY VIEWED
                     </div>
-                    <div className="d-flex align-items-center justify-content-between mb-15">
+                    <div className="d-flex align-items-center justify-content-between mb-18">
                         <div className="visited-link clickable">
                             Overall Performance
                         </div>
                         <Icon className="icon-size-10" icon="ICON_RIGHT_ARROW"/>
                     </div>
-                    <div className="d-flex align-items-center justify-content-between mb-15">
+                    <div className="d-flex align-items-center justify-content-between mb-18">
                         <div className="visited-link clickable">
                             Invoice #940
                         </div>
