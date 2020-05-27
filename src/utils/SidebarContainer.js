@@ -48,7 +48,7 @@ class SidebarContainer extends Component {
                         <Icon className="icon-progress mr-3" icon={pathname === '/lab-experiment' ? 'ICON_LAB_ACTIVE' :'ICON_LAB_INACTIVE'}/>
                         <div>Lab / Experimental</div>
                     </NavLink>
-                    <div className="designation">
+                    <div className="designation mt-2">
                         RECENTLY VIEWED
                     </div>
                     <div className="d-flex align-items-center justify-content-between mb-18">
