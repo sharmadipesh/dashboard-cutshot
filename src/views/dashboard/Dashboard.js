@@ -35,8 +35,8 @@ class Dashboard extends Component {
                         <DailyVisitor {...this.props}/>
                     </div>
                 </Card>
-                <div className="row mb-30">
-                    <div className="col-md-3">
+                <div className="row">
+                    <div className="col-md-4 col-xl-3 mb-30">
                         <ProgressItems 
                             cardName={'realtime users'}
                             number={'56'}
@@ -45,7 +45,7 @@ class Dashboard extends Component {
                             areaColor={'#e8f0fa'}
                         />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-4 col-xl-3 mb-30">
                         <ProgressItems 
                             cardName={'Total Visits'}
                             number={'54,598'}
@@ -54,7 +54,7 @@ class Dashboard extends Component {
                             areaColor={'#ebf6ed'}
                         />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-4 col-xl-3 mb-30">
                         <ProgressItems 
                             cardName={'Bounce Rate'}
                             number={'73.67%'}
@@ -63,7 +63,7 @@ class Dashboard extends Component {
                             areaColor={'#efeffe'}
                         />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-4 col-xl-3 mb-30">
                         <ProgressItems 
                             cardName={'Visit Duration'}
                             number={'1m 4s'}
@@ -74,8 +74,8 @@ class Dashboard extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-8">
-                        <Card className="">
+                    <div className="col-lg-12 col-xl-8">
+                        <Card className=" mb-30">
                             <div className="title-text plr-20 ptb-15">
                                 Most Visited Pages
                             </div>
@@ -92,7 +92,7 @@ class Dashboard extends Component {
                                     {VisitedPage.map((value,index)=>
                                     <tr key={index}>
                                         <td className="d-flex align-items-center justify-content-between">
-                                            <div>
+                                            <div className="page-name-style" title={value.pageName}>
                                                 {value.pageName}
                                             </div>
                                             <Icon className="clickable icon-size-15" icon="ICON_EXPORT"/>
@@ -113,7 +113,8 @@ class Dashboard extends Component {
                             </table>
                         </Card>
                     </div>
-                    <div className="col-md-4">
+                    {/* col-lg-12 col-xl-8 */}
+                    <div className="col-lg-5 col-md-6 col-xl-4 ">
                         <Card className="mb-30">
                             <div className="title-text plr-20 ptb-15">
                                 Social Media Traffic

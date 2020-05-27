@@ -64,3 +64,16 @@
         }
     }
 }
+
+.sidebar-new{
+    // width: 260px;
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 0;
+    height: 100%;
+
+}

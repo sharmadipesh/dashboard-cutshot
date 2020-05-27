@@ -24,40 +24,19 @@ class MainLayout extends Component {
     render() {
         return (
             <div>
-                <Sidebar
-					sidebar={
-						<SidebarContainer {...this.props} sidebarHandler={this.sidebarHandler} />
-					}
-                    // open={this.state.isSidebarOpen}
-					open={ window.innerWidth >700 ? this.state.isSidebarOpen:!this.state.isSidebarOpen}
-                    onSetOpen={this.sidebarHandler}
-                    docked={ window.innerWidth >700 ? this.state.isSidebarOpen:!this.state.isSidebarOpen}
-					styles={{
-                        root: {
-                            boxShadow:'none'
-                        },
-						sidebar: {
-							background: 'white',
-                            // width: window.innerWidth > 600 ? '19%' : '100vw',
-                            // width: window.innerWidth > 600 ? '260px' : '100vw',
-                            width:'260px',
-                            height:'100%',
-                            boxShadow:'none',
-                            borderRight:'1px solid #dddddd'
-						},
-					}}
-				>
-                    <Header {...this.props}/>
-                    <div className="main-app-container">
-                        <Switch>
-                            <Route exact  {...this.props} path={Routes.LandingPage} component={Dashboard} />
-                            <Route  exact {...this.props} path={Routes.Calender} component={Calender} />
-                            <Route  exact {...this.props} path={Routes.Inbox} component={Inbox} />
-                            <Route  exact {...this.props} path={Routes.Invoice} component={Invoice} />
-                            <Route  exact {...this.props} path={Routes.Lab_Experiment} component={LabExperiment} />
-                        </Switch>
-                    </div>
-                </Sidebar>
+                <Header {...this.props}/>
+                <div className="sidebar-new">
+                    <SidebarContainer {...this.props}/>
+                </div>
+                <div className="main-app-container">
+                    <Switch>
+                        <Route exact  {...this.props} path={Routes.LandingPage} component={Dashboard} />
+                        <Route  exact {...this.props} path={Routes.Calender} component={Calender} />
+                        <Route  exact {...this.props} path={Routes.Inbox} component={Inbox} />
+                        <Route  exact {...this.props} path={Routes.Invoice} component={Invoice} />
+                        <Route  exact {...this.props} path={Routes.Lab_Experiment} component={LabExperiment} />
+                    </Switch>
+                </div>
             </div>
         );
     }

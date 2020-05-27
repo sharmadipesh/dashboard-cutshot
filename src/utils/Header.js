@@ -27,18 +27,16 @@ class Header extends Component {
                 <div className="part-one d-flex align-items-center justify-content-center">
                     <Icon className="icon-progress" icon="ICON_HOME"/>
                 </div>
-                {/* <div className="d-flex align-items-center justify-content-between part-two">
+                <div className="d-flex align-items-center justify-content-between part-two" >
                     <div className="title-text">
                         {this.getPageName(pathname)}
                     </div>
-                    <div className="select-width">
-                        <div className="">
-                            <select className="form-control font-size-14" name="Language">
-                                <option value="English">English</option>
-                            </select>
-                        </div>
+                    <div className="">
+                        <select className="form-control font-size-14" name="Language">
+                            <option value="English">Eng</option>
+                        </select>
                     </div>
-                </div> */}
+                </div>
             </div> 
         );
     }
